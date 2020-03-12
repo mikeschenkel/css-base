@@ -1,0 +1,133 @@
+/* Forms
+ * ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1.15;
+  letter-spacing: inherit;
+  vertical-align: middle;
+}
+
+[type='text'],
+[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-width: 0.125rem;
+}
+
+input {
+  overflow: visible;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+select {
+  padding-right: 1em;
+  text-transform: none;
+  word-wrap: normal;
+  background: no-repeat right center / 1em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select:not([multiple]):not([size]) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+}
+
+::-ms-expand {
+  display: none;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+label {
+  display: inline-block;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+  background: transparent;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Placeholders */
+
+::placeholder {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.54);
+  opacity: 0.54;
+}
+

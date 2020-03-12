@@ -1,0 +1,14 @@
+/* Button
+ * ========================================================================== */
+
+.btn,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  padding: 0.75em 1em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #000;
+}
+

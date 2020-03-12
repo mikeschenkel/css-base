@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-recess-order"
+  ],
+  "defaultSeverity": "warning",
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "font-weight-notation": "numeric",
+    "font-family-name-quotes": "always-unless-keyword"
+  }
+}

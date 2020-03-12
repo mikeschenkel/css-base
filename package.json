@@ -1,0 +1,25 @@
+{
+  "name": "css-base",
+  "version": "1.0.0",
+  "description": "My personal CSS reset",
+  "author": "Mike Schenkel",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp styles"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.26.3",
+    "sass-mq": "^5.0.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-recess-order": "^2.0.3"
+  }
+}

@@ -1,0 +1,32 @@
+/* Sr-only
+ * ========================================================================== */
+
+/* Hide only visually, but have it available for screen readers. */
+
+.sr-only {
+  &:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Hide visually, but have it available for screen readers and keyboard users. */
+
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: inherit;
+  }
+}
+
