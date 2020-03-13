@@ -12,6 +12,7 @@ Many rulesets are based on the following resets:
 * [modern-normalize.css](https://github.com/sindresorhus/modern-normalize/blob/master/modern-normalize.css)
 * [sanitize.css](https://github.com/csstools/sanitize.css/blob/master/sanitize.css)
 * [remedy.css](https://github.com/mozdevs/cssremedy/blob/master/css/remedy.css)
+* [destyle.css](https://github.com/nicolas-cusan/destyle.css/blob/master/destyle.css)
 
 ## License
 
