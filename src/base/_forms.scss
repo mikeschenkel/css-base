@@ -21,10 +21,6 @@ textarea {
   border-width: 0.125rem;
 }
 
-input {
-  overflow: visible;
-}
-
 textarea {
   overflow: auto;
   resize: vertical;
@@ -32,7 +28,6 @@ textarea {
 
 select {
   padding-right: 1em;
-  text-transform: none;
   word-wrap: normal;
   background: no-repeat right center / 1em;
   -moz-appearance: none;
@@ -62,9 +57,26 @@ label[for] {
 }
 
 button {
-  overflow: visible;
-  text-transform: none;
+  cursor: pointer;
   background: transparent;
+}
+
+/**
+ * Show the overflow in IE.
+ */
+
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ */
+
+button,
+select {
+  text-transform: none;
 }
 
 /**
@@ -76,6 +88,13 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+}
+
+button[disabled],
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
+  cursor: not-allowed;
 }
 
 /**
@@ -121,13 +140,5 @@ button,
 
 :-moz-ui-invalid {
   box-shadow: none;
-}
-
-/* Placeholders */
-
-::placeholder {
-  font: inherit;
-  color: rgba(0, 0, 0, 0.54);
-  opacity: 0.54;
 }
 
