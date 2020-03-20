@@ -5,6 +5,7 @@
   "author": "Mike Schenkel",
   "license": "MIT",
   "scripts": {
+    "start": "gulp watch",
     "build": "gulp styles"
   },
   "browserslist": [
