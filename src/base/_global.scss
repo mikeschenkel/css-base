@@ -20,11 +20,14 @@
   color: var(--color-dark);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
   background-color: var(--color-light);
 }
 
