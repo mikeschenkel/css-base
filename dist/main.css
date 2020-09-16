@@ -17,7 +17,7 @@
   /* Fonts */
   --family-normal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --family-special: serif;
-  --family-code: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  --family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* Line height */
   --line-height: var(--ratio);
   --line-height-small: calc(0.75 * var(--ratio));
@@ -54,11 +54,14 @@
   color: var(--color-dark);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
   background-color: var(--color-light);
 }
 
@@ -77,6 +80,16 @@ body {
 :focus:not(:active) {
   outline: 0.15rem solid #333;
   outline-offset: 0.25rem;
+}
+
+/**
+ * 1. Get rid of the annoying outline for mouse users but preserve it for
+ *    keyboard users.
+ *    See: https://twitter.com/LeaVerou/status/1045768279753666562
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+  /* 1 */
 }
 
 [tabindex="-1"]:focus {
