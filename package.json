@@ -18,7 +18,7 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
-    "sass": "^1.26.3",
+    "sass": "^1.26.11",
     "sass-mq": "^5.0.1",
     "stylelint": "^13.2.1",
     "stylelint-config-recess-order": "^2.0.4"
