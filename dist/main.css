@@ -221,10 +221,9 @@ dt {
 
 /* Embedded content
  * ========================================================================== */
-img, svg, video, canvas, audio, iframe, embed, object {
+img, svg, picture, video, canvas, audio, iframe, embed, object {
   display: block;
   max-width: 100%;
-  vertical-align: middle;
 }
 
 img, svg, video, canvas {
