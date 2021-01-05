@@ -272,9 +272,11 @@ blockquote {
  * ========================================================================== */
 table {
   width: 100%;
+  text-indent: 0;
   table-layout: fixed;
   border-spacing: 0;
   border-collapse: collapse;
+  border-color: inherit;
 }
 
 caption {
