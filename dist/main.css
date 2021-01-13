@@ -463,10 +463,13 @@ button[disabled],
 }
 
 /**
- * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ * 1. Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ * 2. Remove cancelation icon
  */
+::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 /**
