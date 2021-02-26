@@ -54,7 +54,7 @@
   color: var(--color-dark);
 }
 
-html {
+html:focus-within {
   scroll-behavior: smooth;
 }
 
