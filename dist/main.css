@@ -1,1 +1,557 @@
-:root{--ratio:1.5;--s-5:calc(var(--s-4)/var(--ratio));--s-4:calc(var(--s-3)/var(--ratio));--s-3:calc(var(--s-2)/var(--ratio));--s-2:calc(var(--s-1)/var(--ratio));--s-1:calc(var(--s0)/var(--ratio));--s0:1rem;--s1:calc(var(--s0)*var(--ratio));--s2:calc(var(--s1)*var(--ratio));--s3:calc(var(--s2)*var(--ratio));--s4:calc(var(--s3)*var(--ratio));--s5:calc(var(--s4)*var(--ratio));--family-normal:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";--family-special:serif;--family-code:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--line-height:var(--ratio);--line-height-small:calc(var(--ratio)*0.75);--color-light:#fff;--color-dark:#000;--measure:65ch;--border-thin:var(--s-4);--border-thick:var(--s-2);--border-radius:0.25rem}*,:after,:before{box-sizing:border-box;padding:0;margin:0;font-family:inherit;color:inherit;word-break:break-word;border:0 solid}:root{font-family:var(--family-normal);font-size:calc(1rem + .25vw);line-height:var(--line-height);color:var(--color-dark)}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;overflow-x:hidden;text-rendering:optimizeSpeed;background-color:var(--color-light)}::selection{color:#fff;text-shadow:none;background:#000}[href]:focus{outline:none}:focus:not(:active){outline:.15rem solid #333;outline-offset:.25rem}:focus:not(:focus-visible),[tabindex="-1"]:focus{outline:none}a:not([class]){-webkit-text-decoration-skip:ink;text-decoration-skip-ink:auto;text-decoration-thickness:.075em}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:var(--family-special);font-weight:700;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;line-height:1.25}.h1,h1{font-size:2rem}.h2,h2{font-size:1.5rem}.h3,h3{font-size:1.1875rem}.h4,h4{font-size:1rem}.h5,h5{font-size:.8125rem}.h6,h6{font-size:.625rem}hr{overflow:visible;border-width:1px 0 0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help}b,strong{font-weight:700}small{font-size:80%}pre{white-space:pre-wrap}code,kbd,pre,samp{font-family:var(--family-code);font-size:1em}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}ol[class],ul[class]{list-style:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E")}ol[role=list],ul[role=list]{list-style:none}ol:not([class]),ul:not([class]){margin-left:1rem}dt{font-weight:700}img,picture{display:block;max-width:100%}img[width]{width:auto}img[width][height]{height:auto}img[src$=".svg"]{width:100%;max-width:none;height:auto}svg:not([fill]){fill:currentColor}figure{max-width:-webkit-fit-content;max-width:-moz-fit-content;max-width:fit-content}figcaption{max-width:var(--measure);margin-top:.5rem;margin-right:auto;margin-left:auto;font-size:.8em;font-style:italic;text-align:center}figcaption em{font-style:normal}blockquote{font-size:1.25rem;font-style:italic;font-weight:700}table{width:100%;text-indent:0;table-layout:fixed;border-spacing:0;border-collapse:collapse;border-color:inherit}caption{text-align:left}td,th{vertical-align:top}th{font-weight:700;text-align:left}details{display:block}summary{display:list-item}[hidden]{display:none}[aria-disabled=true],[disabled],[readonly]{cursor:not-allowed;opacity:.6}@media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,:after,:before{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}button,input,optgroup,select,textarea{font:inherit;line-height:1.15;letter-spacing:inherit;vertical-align:middle;word-spacing:inherit}[type=email],[type=text],select,textarea{width:100%;padding:.5rem;border-width:.125rem}textarea{overflow:auto;resize:vertical}select{padding-right:1em;word-wrap:normal;background:no-repeat 100%/1em;-moz-appearance:none;-webkit-appearance:none}select:not([multiple]):not([size]){background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E")}::-ms-expand{display:none}legend{display:table;max-width:100%;white-space:normal}label{display:inline-block}button,label[for]{cursor:pointer}button{background:transparent}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button][disabled],[type=reset][disabled],[type=submit][disabled],button[disabled]{cursor:not-allowed}::-moz-focus-inner{padding:0;border-style:none}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-cancel-button,::-webkit-search-decoration{-webkit-appearance:none;appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.sr-only:not(:focus):not(:active){position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);white-space:nowrap}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto;white-space:inherit}.wrapper{box-sizing:content-box;max-width:90ch;padding-right:1rem;padding-left:1rem;margin-right:auto;margin-left:auto}.btn,input[type=button],input[type=reset],input[type=submit]{display:inline-block;min-width:100px;padding:.75em 1em;color:#fff;text-align:center;text-decoration:none;cursor:pointer;background-color:#000;border-radius:0}.btn--icon{min-width:0}
+/* Config
+ * ========================================================================== */
+:root {
+  /* Scale */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  /* Fonts */
+  --family-normal: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --family-special: serif;
+  --family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Line height */
+  --line-height: var(--ratio);
+  --line-height-small: calc(0.75 * var(--ratio));
+  /* Colors */
+  --color-light: #fff;
+  --color-dark: #000;
+  /* Measure (line length) */
+  --measure: 65ch;
+  /* Border widths */
+  --border-thin: var(--s-4);
+  --border-thick: var(--s-2);
+  /* Border radius */
+  --border-radius: 0.25rem;
+}
+
+/* Global
+ * ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  word-break: break-word;
+  border: 0 solid;
+}
+
+:root {
+  font-family: var(--family-normal);
+  font-size: calc(1rem + 0.25vw);
+  line-height: var(--line-height);
+  color: var(--color-dark);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  background-color: var(--color-light);
+}
+
+::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #000;
+}
+
+/* Focus
+ * ========================================================================== */
+[href]:focus {
+  outline: none;
+}
+
+:focus:not(:active) {
+  outline: 0.15rem solid #333;
+  outline-offset: 0.25rem;
+}
+
+/**
+ * 1. Get rid of the annoying outline for mouse users but preserve it for
+ *    keyboard users.
+ *    See: https://twitter.com/LeaVerou/status/1045768279753666562
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+  /* 1 */
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+/* Links
+ * ========================================================================== */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 0.075em;
+}
+
+/* Headings
+ * ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--family-special);
+  font-weight: 700;
+  hyphens: auto;
+  line-height: 1.25;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+
+/* 32px */
+h2, .h2 {
+  font-size: 1.5rem;
+}
+
+/* 24px */
+h3, .h3 {
+  font-size: 1.1875rem;
+}
+
+/* 19px */
+h4, .h4 {
+  font-size: 1rem;
+}
+
+/* 16px */
+h5, .h5 {
+  font-size: 0.8125rem;
+}
+
+/* 13px */
+h6, .h6 {
+  font-size: 0.625rem;
+}
+
+/* 10px */
+/* Typography
+ * ========================================================================== */
+hr {
+  overflow: visible;
+  border-width: 1px 0 0;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--family-code);
+  font-size: 1em;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Lists
+ * ========================================================================== */
+/**
+ * 1. Remove list styles in CSS without preventing VoiceOver from announcing
+ *    them in Safari.
+ *    See: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+ */
+ul[class],
+ol[class] {
+  list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
+  /* 1 */
+}
+
+/**
+ * Remove list styles on ul, ol elements with a list role, which suggests
+ * default styling will be removed.
+ */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul:not([class]),
+ol:not([class]) {
+  margin-left: 1rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+/* Embedded content
+ * ========================================================================== */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+img[width] {
+  width: auto;
+}
+
+img[width][height] {
+  height: auto;
+}
+
+img[src$=".svg"] {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/* Figures
+ * ========================================================================== */
+figure {
+  max-width: fit-content;
+}
+
+figcaption {
+  max-width: var(--measure);
+  margin-top: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+figcaption em {
+  font-style: normal;
+}
+
+/* Blockquotes
+ * ========================================================================== */
+blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Tables
+ * ========================================================================== */
+table {
+  width: 100%;
+  text-indent: 0;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: inherit;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  vertical-align: top;
+}
+
+th {
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Interactive content
+ * ========================================================================== */
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+/* States
+ * ========================================================================== */
+[hidden] {
+  display: none;
+}
+
+[aria-disabled=true],
+[disabled],
+[readonly] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Motion
+ * ========================================================================== */
+/**
+ * Remove all animations and transitions for people that prefer not to see
+ * them.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Forms
+ * ========================================================================== */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  line-height: 1.15;
+  letter-spacing: inherit;
+  vertical-align: middle;
+  word-spacing: inherit;
+}
+
+[type=text],
+[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-width: 0.125rem;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+select {
+  padding-right: 1em;
+  word-wrap: normal;
+  background: no-repeat right center/1em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select:not([multiple]):not([size]) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+}
+
+::-ms-expand {
+  display: none;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+label {
+  display: inline-block;
+}
+
+label[for] {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: not-allowed;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional ':invalid' styles in Firefox.
+ * See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+ */
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ * 2. Remove cancelation icon
+ */
+::-webkit-search-cancel-button,
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Sr-only
+ * ========================================================================== */
+/* Hide only visually, but have it available for screen readers. */
+.sr-only:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Hide visually, but have it available for screen readers and keyboard users. */
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: inherit;
+}
+
+/* Wrapper
+ * ========================================================================== */
+.wrapper {
+  box-sizing: content-box;
+  max-width: 90ch;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Button
+ * ========================================================================== */
+.btn,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  display: inline-block;
+  min-width: 100px;
+  padding: 0.75em 1em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 0;
+}
+
+.btn--icon {
+  min-width: initial;
+}

@@ -20,6 +20,11 @@
   color: var(--color-dark);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }
