@@ -36,13 +36,9 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-address,
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
 
 img,
@@ -67,6 +63,15 @@ img[src$='.svg'] {
 
 svg:not([fill]) {
   fill: currentColor;
+}
+
+address,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
 }
 
 /**

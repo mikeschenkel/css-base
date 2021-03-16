@@ -71,13 +71,9 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-address,
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
+ul[role=list],
+ol[role=list] {
+  list-style: none;
 }
 
 img,
@@ -102,6 +98,15 @@ img[src$=".svg"] {
 
 svg:not([fill]) {
   fill: currentColor;
+}
+
+address,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
 }
 
 /**
@@ -265,31 +270,6 @@ sup {
 
 /* Lists
  * ========================================================================== */
-/**
- * 1. Remove list styles in CSS without preventing VoiceOver from announcing
- *    them in Safari.
- *    See: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
- */
-ul[class],
-ol[class] {
-  list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
-  /* 1 */
-}
-
-/**
- * Remove list styles on ul, ol elements with a list role, which suggests
- * default styling will be removed.
- */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
-}
-
-ul:not([class]),
-ol:not([class]) {
-  margin-left: 1rem;
-}
-
 dt {
   font-weight: 700;
 }
