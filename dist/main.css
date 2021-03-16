@@ -173,13 +173,6 @@ body {
   outline: none;
 }
 
-/* Links
- * ========================================================================== */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 0.075em;
-}
-
 /* Typography
  * ========================================================================== */
 hr {
@@ -333,6 +326,11 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1rem;
   /* 16px */
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 0.075em;
 }
 
 /* Forms
