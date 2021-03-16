@@ -6,10 +6,10 @@ input,
 optgroup,
 select,
 textarea {
-  font: inherit;
   line-height: 1.15;
   letter-spacing: inherit;
   vertical-align: middle;
+  border: 0;
   word-spacing: inherit;
 }
 
@@ -19,7 +19,7 @@ select,
 textarea {
   width: 100%;
   padding: 0.5rem;
-  border-width: 0.125rem;
+  border: 1px solid #919191;
 }
 
 textarea {

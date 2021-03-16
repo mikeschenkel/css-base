@@ -1,18 +1,6 @@
 /* Global
  * ========================================================================== */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  color: inherit;
-  word-break: break-word;
-  border: 0 solid;
-}
-
 :root {
   font-family: var(--family-normal);
   font-size: calc(1rem + 0.25vw);
@@ -20,18 +8,8 @@
   color: var(--color-dark);
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
 body {
   min-height: 100vh;
-  overflow-x: hidden;
   text-rendering: optimizeSpeed;
   background-color: var(--color-light);
 }
@@ -83,7 +61,6 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--family-special);
   font-weight: 700;
-  hyphens: auto;
   line-height: 1.25;
 }
 
@@ -177,33 +154,6 @@ dt {
   font-weight: 700;
 }
 
-/* Embedded content
- * ========================================================================== */
-
-img,
-picture {
-  display: block;
-  max-width: 100%;
-}
-
-img[width] {
-  width: auto;
-}
-
-img[width][height] {
-  height: auto;
-}
-
-img[src$='.svg'] {
-  width: 100%;
-  max-width: none;
-  height: auto;
-}
-
-svg:not([fill]) {
-  fill: currentColor;
-}
-
 /* Figures
  * ========================================================================== */
 
@@ -284,25 +234,3 @@ summary {
   opacity: 0.6;
 }
 
-/* Motion
- * ========================================================================== */
-
-/**
- * Remove all animations and transitions for people that prefer not to see
- * them.
- */
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-  }
-}
