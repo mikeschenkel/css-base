@@ -27,13 +27,19 @@ h4 {
   word-break: break-word;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 ul[role='list'],
