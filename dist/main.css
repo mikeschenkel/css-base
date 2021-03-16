@@ -15,9 +15,9 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   /* Fonts */
-  --family-normal: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --family-special: serif;
-  --family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-family-display: serif;
+  --font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* Line height */
   --line-height: var(--ratio);
   --line-height-small: calc(0.75 * var(--ratio));
@@ -130,7 +130,7 @@ textarea {
 /* Global
  * ========================================================================== */
 :root {
-  font-family: var(--family-normal);
+  font-family: var(--font-family-base);
   font-size: calc(1rem + 0.25vw);
   line-height: var(--line-height);
   color: var(--color-dark);
@@ -213,7 +213,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: var(--family-code);
+  font-family: var(--font-family-code);
   font-size: 1em;
 }
 
@@ -308,9 +308,9 @@ summary {
   opacity: 0.6;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--family-special);
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: var(--font-family-display);
   font-weight: 700;
   line-height: 1.25;
 }
@@ -333,16 +333,6 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1rem;
   /* 16px */
-}
-
-h5, .h5 {
-  font-size: 0.8125rem;
-  /* 13px */
-}
-
-h6, .h6 {
-  font-size: 0.625rem;
-  /* 10px */
 }
 
 /* Forms

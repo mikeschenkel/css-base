@@ -1,6 +1,6 @@
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--family-special);
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: var(--font-family-display);
   font-weight: 700;
   line-height: 1.25;
 }
@@ -19,12 +19,4 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1rem; /* 16px */
-}
-
-h5, .h5 {
-  font-size: 0.8125rem; /* 13px */
-}
-
-h6, .h6 {
-  font-size: 0.625rem; /* 10px */
 }
