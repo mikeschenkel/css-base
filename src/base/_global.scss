@@ -18,13 +18,9 @@ body {
 /* Focus
  * ========================================================================== */
 
-[href]:focus {
-  outline: none;
-}
-
 :focus:not(:active) {
-  outline: 0.15rem solid #333;
-  outline-offset: 0.25rem;
+  outline: 0.15rem dashed #000;
+  outline-offset: 0.15rem;
 }
 
 /**
@@ -35,6 +31,10 @@ body {
 
 :focus:not(:focus-visible) {
   outline: none; /* 1 */
+}
+
+[href]:focus {
+  outline: none;
 }
 
 [tabindex='-1']:focus {
