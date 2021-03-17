@@ -18,26 +18,12 @@ body {
 /* Focus
  * ========================================================================== */
 
-:focus:not(:active) {
-  outline: 0.15rem dashed #000;
-  outline-offset: 0.15rem;
+:focus {
+  outline: 2px solid #000;
+  outline-offset: 0.25rem;
 }
 
-/**
- * 1. Get rid of the annoying outline for mouse users but preserve it for
- *    keyboard users.
- *    See: https://twitter.com/LeaVerou/status/1045768279753666562
- */
-
-:focus:not(:focus-visible) {
-  outline: none; /* 1 */
-}
-
-[href]:focus {
-  outline: none;
-}
-
-[tabindex='-1']:focus {
+main:focus {
   outline: none;
 }
 
