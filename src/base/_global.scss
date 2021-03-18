@@ -68,17 +68,3 @@ summary {
   display: list-item;
 }
 
-/* States
- * ========================================================================== */
-
-[hidden] {
-  display: none;
-}
-
-[aria-disabled='true'],
-[disabled],
-[readonly] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
