@@ -6,10 +6,13 @@ input,
 optgroup,
 select,
 textarea {
+  padding: 0;
+  margin: 0;
   line-height: 1.15;
   letter-spacing: inherit;
   vertical-align: middle;
   border: 0;
+  border-radius: 0;
   word-spacing: inherit;
 }
 
@@ -18,8 +21,12 @@ textarea {
 select,
 textarea {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #919191;
+  padding: 0.5em;
+  border: 1px solid #a0a0a0;
+
+  &:focus {
+    outline-offset: 0;
+  }
 }
 
 textarea {
@@ -30,27 +37,27 @@ textarea {
 select {
   padding-right: 1em;
   word-wrap: normal;
+  cursor: pointer;
   background: no-repeat right center / 1em;
-  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
+
+  &:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
 }
 
-select:not([multiple]):not([size]) {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
-}
-
-::-ms-expand {
-  display: none;
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  border: 1px solid #a0a0a0;
 }
 
 legend {
-  display: table;
-  max-width: 100%;
-  white-space: normal;
-}
-
-label {
-  display: inline-block;
+  padding: 0;
 }
 
 label[for] {
@@ -80,13 +87,6 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
-}
-
-button[disabled],
-[type='button'][disabled],
-[type='reset'][disabled],
-[type='submit'][disabled] {
-  cursor: not-allowed;
 }
 
 /**
@@ -135,14 +135,12 @@ button[disabled],
 }
 
 /**
- * 1. Remove the inner padding in Chrome, Edge, and Safari on macOS.
- * 2. Remove cancelation icon
+ * Remove the cancelation icon and inner padding in Chrome, Edge, and Safari on macOS.
  */
 
 ::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
   -webkit-appearance: none;
-  appearance: none;
 }
 
 /**

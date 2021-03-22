@@ -77,6 +77,12 @@ body {
   line-height: 1.5;
 }
 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.08em;
+  text-decoration-thickness: 0.06em;
+}
+
 ul[role=list],
 ol[role=list] {
   list-style: none;
@@ -151,26 +157,22 @@ body {
 
 /* Focus
  * ========================================================================== */
-:focus:not(:active) {
-  outline: 0.15rem dashed #000;
-  outline-offset: 0.15rem;
+:focus {
+  outline: 1px solid #000;
+  outline-offset: 0.25rem;
 }
 
 /**
  * 1. Get rid of the annoying outline for mouse users but preserve it for
  *    keyboard users.
- *    See: https://twitter.com/LeaVerou/status/1045768279753666562
+ *    See: https://www.tpgi.com/focus-visible-and-backwards-compatibility
  */
 :focus:not(:focus-visible) {
   outline: none;
   /* 1 */
 }
 
-[href]:focus {
-  outline: none;
-}
-
-[tabindex="-1"]:focus {
+main:focus {
   outline: none;
 }
 
@@ -179,11 +181,6 @@ body {
 hr {
   overflow: visible;
   border-width: 1px 0 0;
-}
-
-abbr[title] {
-  text-decoration: underline dotted;
-  cursor: help;
 }
 
 b,
@@ -213,19 +210,6 @@ summary {
   display: list-item;
 }
 
-/* States
- * ========================================================================== */
-[hidden] {
-  display: none;
-}
-
-[aria-disabled=true],
-[disabled],
-[readonly] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
   font-family: var(--font-family-display);
@@ -253,11 +237,6 @@ h4, .h4 {
   /* 16px */
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: 0.075em;
-}
-
 ul[role=list] {
   padding: 0;
   margin: 0;
@@ -270,10 +249,13 @@ input,
 optgroup,
 select,
 textarea {
+  padding: 0;
+  margin: 0;
   line-height: 1.15;
   letter-spacing: inherit;
   vertical-align: middle;
   border: 0;
+  border-radius: 0;
   word-spacing: inherit;
 }
 
@@ -282,8 +264,14 @@ textarea {
 select,
 textarea {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #919191;
+  padding: 0.5em;
+  border: 1px solid #a0a0a0;
+}
+[type=text]:focus,
+[type=email]:focus,
+select:focus,
+textarea:focus {
+  outline-offset: 0;
 }
 
 textarea {
@@ -294,27 +282,25 @@ textarea {
 select {
   padding-right: 1em;
   word-wrap: normal;
+  cursor: pointer;
   background: no-repeat right center/1em;
-  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
 }
-
 select:not([multiple]):not([size]) {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
 }
-
-::-ms-expand {
+select::-ms-expand {
   display: none;
 }
 
-legend {
-  display: table;
-  max-width: 100%;
-  white-space: normal;
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  border: 1px solid #a0a0a0;
 }
 
-label {
-  display: inline-block;
+legend {
+  padding: 0;
 }
 
 label[for] {
@@ -342,13 +328,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-}
-
-button[disabled],
-[type=button][disabled],
-[type=reset][disabled],
-[type=submit][disabled] {
-  cursor: not-allowed;
 }
 
 /**
@@ -394,13 +373,11 @@ button[disabled],
 }
 
 /**
- * 1. Remove the inner padding in Chrome, Edge, and Safari on macOS.
- * 2. Remove cancelation icon
+ * Remove the cancelation icon and inner padding in Chrome, Edge, and Safari on macOS.
  */
 ::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
   -webkit-appearance: none;
-  appearance: none;
 }
 
 /**
