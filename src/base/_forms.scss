@@ -10,7 +10,6 @@ textarea {
   margin: 0;
   line-height: 1.15;
   letter-spacing: inherit;
-  vertical-align: middle;
   border: 0;
   border-radius: 0;
   word-spacing: inherit;
@@ -64,7 +63,10 @@ label[for] {
   cursor: pointer;
 }
 
-button {
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
   cursor: pointer;
   background: transparent;
 }

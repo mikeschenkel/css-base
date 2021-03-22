@@ -253,7 +253,6 @@ textarea {
   margin: 0;
   line-height: 1.15;
   letter-spacing: inherit;
-  vertical-align: middle;
   border: 0;
   border-radius: 0;
   word-spacing: inherit;
@@ -307,7 +306,10 @@ label[for] {
   cursor: pointer;
 }
 
-button {
+button,
+[type=button],
+[type=reset],
+[type=submit] {
   cursor: pointer;
   background: transparent;
 }
@@ -428,21 +430,20 @@ button,
 
 /* Button
  * ========================================================================== */
-.btn,
-input[type=button],
-input[type=reset],
-input[type=submit] {
-  display: inline-block;
-  min-width: 100px;
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8ch;
   padding: 0.75em 1em;
-  color: #fff;
+  line-height: 1;
+  color: var(--color-light);
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #000;
-  border-radius: 0;
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0.25em;
 }
-
-.btn--icon {
+.button--icon {
   min-width: initial;
 }

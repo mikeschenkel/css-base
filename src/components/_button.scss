@@ -1,22 +1,22 @@
 /* Button
  * ========================================================================== */
 
-.btn,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  display: inline-block;
-  min-width: 100px;
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8ch;
   padding: 0.75em 1em;
-  color: #fff;
+  line-height: 1;
+  color: var(--color-light);
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #000;
-  border-radius: 0;
-}
+  background-color: var(--color-dark);
+  border: 0;
+  border-radius: 0.25em;
 
-.btn--icon {
-  min-width: initial;
+  &--icon {
+    min-width: initial;
+  }
 }
 
