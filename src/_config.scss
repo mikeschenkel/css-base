@@ -16,7 +16,7 @@ $mq-breakpoints: (
 
 :root {
   /* Scale */
-  --ratio: 1.5;
+  --ratio: 1.333;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -29,25 +29,26 @@ $mq-breakpoints: (
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 
+  /* Typographic scale */
+  --size-300: var(--s-1);
+  --size-400: var(--s0);
+  --size-500: var(--s1);
+  --size-600: var(--s2);
+  --size-700: var(--s3);
+  --size-800: var(--s4);
+  --size-900: var(--s5);
+
   /* Fonts */
   --font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-  --font-family-display: serif;
+  --font-family-display: Georgia, Times, Times New Roman, serif; ;
   --font-family-code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* Line height */
-  --line-height: var(--ratio);
-  --line-height-small: calc(0.75 * var(--ratio));
+  --line-height: 1.5;
 
   /* Colors */
   --color-light: #fff;
   --color-dark: #000;
-
-  /* Measure (line length) */
-  --measure: 65ch;
-
-  /* Border widths */
-  --border-thin: var(--s-4);
-  --border-thick: var(--s-2);
 
   /* Border radius */
   --border-radius: 0.25rem;
