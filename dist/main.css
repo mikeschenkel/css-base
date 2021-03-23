@@ -393,6 +393,10 @@ button,
   /* 2 */
 }
 
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
 /* Sr-only
  * ========================================================================== */
 /* Hide only visually, but have it available for screen readers. */
