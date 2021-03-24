@@ -1,13 +1,16 @@
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-family-display);
-  font-weight: 700;
-  line-height: 1.3;
+$heading-variants: h1, h2, h3, h4;
+
+@each $type in $heading-variants {
+  #{$type},
+  .#{$type} {
+    font-family: var(--font-family-display);
+    font-weight: 700;
+    line-height: 1.3;
+  }
 }
 
-h1 {
+h1,
+.h1 {
   font-size: var(--size-700);
 
   @media (min-width: 48em) {
@@ -15,7 +18,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: var(--size-600);
 
   @media (min-width: 48em) {
@@ -23,11 +27,13 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-size: var(--size-600);
 }
 
-h4 {
+h4,
+.h4 {
   font-size: var(--size-500);
 }
 
