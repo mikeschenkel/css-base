@@ -31,6 +31,10 @@ main:focus {
   outline: none;
 }
 
+[id] {
+  scroll-margin-top: 2ex;
+}
+
 hr {
   overflow: visible;
   border-width: 1px 0 0;
