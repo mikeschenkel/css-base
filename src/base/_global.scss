@@ -35,6 +35,12 @@ main:focus {
   scroll-margin-top: 2ex;
 }
 
+a {
+  color: var(--color-primary);
+  text-underline-offset: 0.08em;
+  text-decoration-thickness: 0.06em;
+}
+
 hr {
   overflow: visible;
   border-width: 1px 0 0;
