@@ -1,14 +1,8 @@
 // Breakpoints
-$mq-breakpoints: (
-  viewport-3: 320px,
-  viewport-4: 480px,
-  viewport-7: 768px,
-  viewport-9: 992px,
-  viewport-12: 1200px,
-  viewport-13: 1300px,
-  viewport-14: 1440px,
-  viewport-16: 1600px,
-  viewport-19: 1920px,
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  xl: 1200px,
 );
 
 :root {
