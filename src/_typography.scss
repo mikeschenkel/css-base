@@ -1,3 +1,5 @@
+@use 'tools';
+
 :is(h1, h2, h3, h4) {
   font-family: var(--font-family-display);
   font-weight: 700;
@@ -8,7 +10,7 @@ h1,
 .h1 {
   font-size: var(--size-700);
 
-  @include mq(md) {
+  @include tools.mq(md) {
     font-size: var(--size-900);
   }
 }
@@ -17,7 +19,7 @@ h2,
 .h2 {
   font-size: var(--size-600);
 
-  @include mq(md) {
+  @include tools.mq(md) {
     font-size: var(--size-700);
   }
 }
@@ -31,4 +33,3 @@ h4,
 .h4 {
   font-size: var(--size-500);
 }
-

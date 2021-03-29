@@ -1,0 +1,50 @@
+@use '../config/breakpoints' as config;
+
+@function px2em($px) {
+  @if unitless($px) {
+    @return px2em($px * 1px);
+  } @else if unit($px) == em {
+    @return $px;
+  }
+  @return ($px / 16px) * 1em;
+}
+
+@mixin mq(
+  $from: false,
+  $until: false,
+  $and: false,
+  $media-type: all,
+) {
+  $min-width: 0;
+  $max-width: 0;
+  $media-query: '';
+
+  @if $from {
+    @if type-of($from) == number {
+      $min-width: px2em($from);
+    } @else {
+      $min-width: px2em(map-get(config.$breakpoints, $from));
+    }
+  }
+
+  @if $until {
+    @if type-of($until) == number {
+      $max-width: px2em($until - 1px);
+    } @else {
+      $max-width: px2em(map-get(config.$breakpoints, $until) - 1px);
+    }
+  }
+
+  @if $min-width != 0 { $media-query: '#{$media-query} and (min-width: #{$min-width})'; }
+  @if $max-width != 0 { $media-query: '#{$media-query} and (max-width: #{$max-width})'; }
+  @if $and            { $media-query: '#{$media-query} and (#{$and})'; }
+
+  @if ($media-type == 'all' and $media-query != '') {
+    $media-type: '';
+    $media-query: str-slice(unquote($media-query), 6);
+  }
+
+  @media #{$media-type + $media-query} {
+    @content;
+  }
+}

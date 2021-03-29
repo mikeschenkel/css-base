@@ -1,39 +1,12 @@
-// -------------------
-// MAIN STYLESHEET
-// -------------------
+// MAIN
+// ====
 
-@import 'config';
-
-// -------------------
-// TOOLS
-// Site-wide mixins and functions
-// -------------------
-
-@import 'tools/media-query';
-
-// -------------------
-// BASE
-// Low-specificity, far-reaching rulesets
-// -------------------
-
-@import 'base/reset';
-@import 'base/global';
-@import 'base/typography';
-@import 'base/forms';
-
-// -------------------
-// UTILITIES
-// Objects, abstractions, and design patterns
-// -------------------
-
-@import 'utilities/flow';
-@import 'utilities/visually-hidden';
-@import 'utilities/wrapper';
-
-// -------------------
-// COMPONENTS
-// Discrete, complete chunks of UI
-// -------------------
-
-@import 'components/button';
-
+@use 'config';
+@use 'props';
+@use 'tools';
+@use 'reset';
+@use 'global';
+@use 'typography';
+@use 'forms';
+@use 'utilities';
+@use 'components';
